@@ -104,6 +104,7 @@ namespace Angular5CRNew.Controllers
             }
 
             InventoryMaster InventoryMaster = await _context.InventoryMaster.SingleOrDefaultAsync(m => m.InventoryID == id);
+          
             if (InventoryMaster == null)
             {
                 return NotFound();
